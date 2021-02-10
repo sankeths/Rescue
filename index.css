@@ -1,0 +1,74 @@
+body{
+	background-color: teal;
+	min-height: 500px;
+}
+
+#ICContainer{
+    position: relative;
+}
+
+h1, h2, ul,li{
+	color: skyblue;
+}
+
+/*#nanorep1 #nanorep-fw .widget-floating{
+	right:10px;
+	left:auto;
+}*/
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+input.displayed {
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    color: teal;
+    margin-top: 10px;
+    }
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
+button.displayed{
+
+    margin-top: 20px;
+    margin-right: 10px;
+    color: teal;
+}
+
+h2.incorrect, li.incorrect{
+    color: #753b3b;
+}
+
+.myButton {
+    margin: 25px;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color:#599bb3;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}

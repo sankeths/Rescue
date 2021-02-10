@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="https://secure.logmeinrescue.com/InstantChat/InstantChat.aspx"></script>
+    <script type="text/javascript">
+        function loadInstantChat(){
+            var ICLoader = new RescueInstantChatLoader();
+            ICLoader.ICContainer = "ICContainer";
+            ICLoader.HostedCSS = "https://secure.logmeinrescue.com/InstantChat/Standard/InstantChat.css";
+            ICLoader.HostedLanguagesForChatOnlyMode = "https://secure.logmeinrescue.com/InstantChat/LanguagesForChatOnlyMode.js";
+            ICLoader.HostedLanguagesForAppletMode = "https://secure.logmeinrescue.com/InstantChat/LanguagesForAppletMode.js";
+            ICLoader.EntryID = "4552343";
+            ICLoader.Name = document.getElementById("Name").value; /* optional */
+            ICLoader.Comment1 = document.getElementById("Comment1").value; /* optional */
+            // ICLoader.Comment2 = document.getElementById("Comment2").value; /* optional */
+            // ICLoader.Comment3 = document.getElementById("Comment3").value; /* optional */
+            // ICLoader.Comment4 = document.getElementById("Comment4").value; /* optional */
+            // ICLoader.Comment5 = document.getElementById("Comment5").value; /* optional */
+            ICLoader.Tracking0 = ""; /* optional */
+            ICLoader.Language = ""; /* optional */
+            ICLoader.PostMessageTargetOrigin = ""; /* optional (For implementation details, see the LogMeIn Rescue Customization and Integration Guide) */
+            ICLoader.HostedErrorHandler = function(ErrorName){} /* optional */
+            ICLoader.Start();}
+        function handleRebootOrRefresh(){
+            if ((window.location + "").indexOf("rescuewebsessionid") != -1){document.getElementById("ICContainer").style.display=''; loadInstantChat();} /* optional */
+            if (window.location.hash.length == webSessionIdLength + 1){document.getElementById("ICContainer").style.display=''; loadInstantChat();} /* optional */
+        }
+    </script>
+</head>
+
+ 
+
+<body onload="handleRebootOrRefresh();">
+    <div class="content">
+
+ 
+
+    <h1>Welcome to a new world !</h1>
+<h2>This is where I Demo Rescue Channel</h2>
+    <table>
+        <tr><td>Please enter your name: </td><td><input id="Name" type="text" maxlength="64" /></td></tr>
+        <tr><td>Please describe your issue: </td><td>  <select name="Comment1" id="Comment1">
+    <option value="Desktop Support">Desktop Support</option>
+    <option value="Office365 Support">Office365 Support</option>
+    <option value="RE Support">RE Support</option>
+  </select></td></tr>
+    </table>
+<!--     <input class="myButton" type="button" value="Channel 01" onclick="document.getElementById('ICContainer').style.display=''; loadInstantChat();" />
+ -->    <BUTTON class="myButton" type="button" value="Channel 01" onclick="document.getElementById('ICContainer').style.display=''; loadInstantChat();">Get Connected</BUTTON>
+    <div id="ICContainer" style="position: relative; left: 0px; top: 0px; width: 400px; height: 500px; display: none"></div>
+    </div>
+
+ 
+
+</body>
+<link rel="stylesheet" type="text/css" href="index.css">
+
+ 
+
+</html>
